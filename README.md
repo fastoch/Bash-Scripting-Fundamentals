@@ -1,2 +1,5 @@
-# Bash-Scripting-Fundamentals
-A 39-part series covering bash, linux commands and scripting
+# Resources
+
+https://linuxize.com/series/bash-scripting-fundamentals/
+
+# Intro
