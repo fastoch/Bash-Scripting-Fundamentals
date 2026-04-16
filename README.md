@@ -70,14 +70,14 @@ The `./` tells the shell to look for the script in the current directory.
 
 ## Overriding the shebang
 
-If, for some reason, you want to override the interpreter set in the shebang line, run the script by explicitly specifying the desired shell.  
-For example, to run a script using bash no matter which shell is specified in the shebang line:
+You can run a script by explicitly calling the bash interpreter. This method doesn’t require the script to be executable:
 ```bash
 bash hello_world
 ```
+
 >[!warning]  
->Note that overriding the shell interpreter is not recommended, as it may lead to unexpected behavior.
->But it might be useful to not be constantly switching between your usual shell and the one specified in the shebang line.
+>Note that overriding the shell interpreter is not recommended, as it may lead to unexpected behavior.  
+>But it might prevent you from being constantly switching between your usual shell (fish, zsh, ...) and bash.
 
 # How to run a Bash script in Linux (part 2 of 39)
 
