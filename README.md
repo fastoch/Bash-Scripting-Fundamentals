@@ -24,3 +24,5 @@ The **interpreter** is the full path to a binary file (ex: /bin/sh, /bin/bash).
 There are 2 ways to set the interpreter:
 - using the absolute path to the targeted binary: `#!/bin/bash`
 - using the `env` utility to find the specified binary: `#!/usr/bin/env bash`
+
+The advantage of the second approach is that it searches for the executable in the user's `$PATH` environment variable, which makes scripts more portable across systems where Bash may not be installed at `/bin/bash` (such as FreeBSD or NixOS).
