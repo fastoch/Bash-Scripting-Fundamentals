@@ -66,6 +66,7 @@ chmod +x hello_world
 ```bash
 ./hello_world
 ```
+The `./` tells the shell to look for the script in the current directory.
 
 ## Overriding the shebang
 
@@ -79,4 +80,7 @@ bash hello_world
 >But it might be useful to not be constantly switching between your usual shell and the one specified in the shebang line.
 
 # How to run a Bash script in Linux (part 2 of 39)
+
+>[!important]  
+>Remember that the shebang must be on the first line of the script
 
