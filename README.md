@@ -46,3 +46,17 @@ set -x
 - Use `#!/bin/sh` when your script only uses POSIX-compliant syntax and you want maximum portability
 - Use `#!/bin/bash` when your script relies on Bash-specific features
 
+## First script
+
+- create a new file and edit it: `vim hello_world`
+- add the following content:
+```bash
+#!/bin/bash
+
+echo "Hello World"
+```
+
+To be able to run the script without specifying the interpreter from the command line, you need to make the file executable:  
+```bash
+chmod +x hello_world
+```
