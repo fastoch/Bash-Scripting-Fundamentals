@@ -11,6 +11,7 @@ Learning to write Bash scripts is an essential skill for anyone working with Lin
 # Bash Shebang Explained (part 1 of 39)
 
 You might have noticed that the first line in any script starts with the `#!` characters and the path to the Bash interpreter.  
+
 This sequence of characters (`#!`) is called the **shebang** and is used to tell the OS which interpreter to use to parse the rest of the file.  
 
 The **interpreter** is the full path to a binary file (ex: /bin/sh, /bin/bash).  
