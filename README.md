@@ -48,15 +48,35 @@ set -x
 
 ## First script
 
-- create a new file and edit it: `vim hello_world`
-- add the following content:
+- create a new file and edit it via your favorite text editor (mine is Vim): `vim hello_world`
+- add the following content to it:
 ```bash
 #!/bin/bash
 
 echo "Hello World"
 ```
+- write and quit
 
 To be able to run the script without specifying the interpreter from the command line, you need to make the file executable:  
 ```bash
 chmod +x hello_world
 ```
+
+- Now you can run the script by typing `./` followed by the file name:
+```bash
+./hello_world
+```
+
+## Overriding the shebang
+
+If, for some reason, you want to override the interpreter set in the shebang line, run the script by explicitly specifying the desired shell.  
+For example, to run a script using bash no matter which shell is specified in the shebang line:
+```bash
+bash hello_world
+```
+>[!warning]  
+>Note that overriding the shell interpreter is not recommended, as it may lead to unexpected behavior.
+>But it might be useful to not be constantly switching between your usual shell and the one specified in the shebang line.
+
+# How to run a Bash script in Linux (part 2 of 39)
+
