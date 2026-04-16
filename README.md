@@ -77,7 +77,7 @@ bash hello_world
 
 >[!warning]  
 >Note that overriding the shell interpreter is not recommended, as it may lead to unexpected behavior.  
->But it might prevent you from being constantly switching between your usual shell (fish, zsh, ...) and bash.
+>This is handy if you don't want to be constantly switching between your usual shell (fish, zsh, ...) and bash.
 
 # How to run a Bash script in Linux (part 2 of 39)
 
