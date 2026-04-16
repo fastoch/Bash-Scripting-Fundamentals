@@ -21,3 +21,6 @@ The **interpreter** is the full path to a binary file (ex: /bin/sh, /bin/bash).
 - `#!/usr/bin/env perl` - Uses the env command to find the path to the perl executable.
 - `#!/usr/bin/env python3` - Executes the file using the python3 binary.
 
+There are 2 ways to set the interpreter:
+- using the absolute path to the targeted binary: `#!/bin/bash`
+- using the `env` utility to find the specified binary: `#!/usr/bin/env bash`
