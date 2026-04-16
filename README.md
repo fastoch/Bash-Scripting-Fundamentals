@@ -25,4 +25,24 @@ There are 2 ways to set the interpreter:
 - using the absolute path to the targeted binary: `#!/bin/bash`
 - using the `env` utility to find the specified binary: `#!/usr/bin/env bash`
 
-The advantage of the second approach is that it searches for the executable in the user's `$PATH` environment variable, which makes scripts more portable across systems where Bash may not be installed at `/bin/bash` (such as FreeBSD or NixOS).
+The advantage of the second approach is that it searches for the executable in the user's `$PATH` environment variable, which makes scripts more portable across systems 
+where Bash may not be installed at `/bin/bash` (such as FreeBSD or NixOS).
+
+## Passing options to the interpreter
+
+When using the absolute path, you can pass options directly to the interpreter. For example, to run the script in debug mode:
+```bash
+#!/bin/bash -x
+```
+
+When using `env`, you cannot pass options on the shebang line, instead use `set` inside the script:
+```bash
+#!/usr/bin/env bash
+set -x
+```
+
+## `#!/bin/sh` vs `#!/bin/bash`
+
+- Use `#!/bin/sh` when your script only uses POSIX-compliant syntax and you want maximum portability
+- Use `#!/bin/bash` when your script relies on Bash-specific features
+
